@@ -1,0 +1,40 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name=viewport content="width=device-width, initial-scale=1">
+
+  <title>{% block title %}{% endblock %}</title>
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.1.8/semantic.min.css">
+  <style type="text/css">
+    body {
+      background-color: #A04000;
+    }
+    body > .grid {
+      height: 100%;
+    }
+    .image {
+      margin-top: -100px;
+    }
+    .column {
+      max-width: 450px;
+    }
+  </style>
+</head>
+
+<body>
+<div class="ui middle aligned center aligned grid">
+  <div class="column">
+    <h2 class="ui teal image header">
+      <div class="content">
+        URL Shortener
+      </div>
+    </h2>
+    <div class="ui stackable container">  
+      {% block body %}{% endblock %}
+    </div>
+  </div>  
+</div>
+</body>
+</html>
